@@ -36,10 +36,16 @@ const faqs = [
   }
 ]
 
-const openedIndex = ref(0)
-const toggle = (idx) => {
-  openedIndex.value = openedIndex.value === idx ? -1 : idx
-}
+ const openedSet = ref(new Set())
+ const toggle = (idx) => {
+   const next = new Set(openedSet.value)
+   if (next.has(idx)) {
+     next.delete(idx)
+   } else {
+     next.add(idx)
+   }
+   openedSet.value = next
+ }
 </script>
 
 <template>
@@ -66,14 +72,14 @@ const toggle = (idx) => {
             @click="toggle(idx)"
           >
             <span class="text-2xl font-medium">{{ item.q }}</span>
-            <div class=" transition-all duration-300" :class="{'rotate-180': openedIndex === idx}" >
+             <div class=" transition-all duration-300" :class="{'rotate-180': openedSet.has(idx)}" >
 
-                <img src="@/assets/svg/plus.svg" alt="plus" v-if="openedIndex !== idx" width="35" height="35" class=" min-w-[35px] min-h-[35px]">
-                <img src="@/assets/svg/minus.svg" alt="minus" v-else width="35" height="35" class=" min-w-[35px] min-h-[35px]">
+                 <img src="@/assets/svg/plus.svg" alt="plus" v-if="!openedSet.has(idx)" width="35" height="35" class=" min-w-[35px] min-h-[35px]">
+                 <img src="@/assets/svg/minus.svg" alt="minus" v-else width="35" height="35" class=" min-w-[35px] min-h-[35px]">
             </div>
           </button>
           <transition name="faq-reveal">
-            <div v-show="openedIndex === idx" class="px-6 pb-6 -mt-2">
+             <div v-show="openedSet.has(idx)" class="px-6 pb-6 -mt-2">
               <p class="text-lg text-mid-gray font-normal" >{{ item.a }}</p>
             </div>
           </transition>

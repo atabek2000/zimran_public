@@ -2,6 +2,8 @@
 import { reactive, computed, ref } from 'vue'
 import { useRouter } from 'vue-router'
 
+const emit = defineEmits(['close'])
+
 const router = useRouter()
 
 const form = reactive({
@@ -55,19 +57,24 @@ async function handleSubmit() {
 
     isSubmitting.value = false
 
-//   try {
-//     const res = await fetch(endpoint, {
-//       method: 'POST',
-//       headers: { 'Content-Type': 'application/json' },
-//       body: JSON.stringify(form),
-//     })
-//     if (!res.ok) throw new Error('Request failed')
-//     router.push('/result')
-//   } catch (err) {
-//     submitError.value = 'Не удалось отправить. Попробуйте позже.'
-//   } finally {
-//     isSubmitting.value = false
-//   }
+    emit('close')
+    router.push('/result')
+
+
+  try {
+    const res = await fetch(endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form),
+    })
+    if (!res.ok) throw new Error('Request failed')
+    router.push('/result')
+  } catch (err) {
+    console.error(err);
+    // submitError.value = 'Не удалось отправить. Попробуйте позже.'
+  } finally {
+    isSubmitting.value = false
+  }
 }
 </script>
 

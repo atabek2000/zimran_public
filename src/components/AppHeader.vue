@@ -52,8 +52,7 @@ const closeMobileMenu = () => { showMobileMenu.value = false }
   <transition name="fade">
     <div v-if="showRegister" class="fixed inset-0 z-50 flex items-start md:items-center justify-center p-3 md:p-6 bg-black/60 backdrop-blur-sm overflow-y-auto" @click.self="closeRegister">
       <div class="relative w-full max-w-3xl">
-        <button type="button" @click="closeRegister" aria-label="Close" class="absolute -top-3 -right-3 md:-right-4 md:-top-4 z-10 bg-black text-concrete rounded-full w-10 h-10 flex items-center justify-center shadow-lg">×</button>
-        <Feedback />
+        <Feedback @close="closeRegister" />
       </div>
     </div>
   </transition>

@@ -27,9 +27,9 @@ const closeRegister = () => { showRegister.value = false }
         </div>
         <div class=" relative mt-20 md:mt-0">
     
-          <h2 class=" text-[28px] leading-[30px] md:text-[90px] md:leading-[94px] font-medium md:font-bold text-center">Как через дизайн строить топ-1 продукты в мире</h2>
+          <h2 class=" text-[28px] leading-[30px] md:text-[90px] md:leading-[94px] font-bold text-center">Как через дизайн строить топ-1 продукты в мире</h2>
           <p class=" text-center text-base md:text-2xl font-medium text-dove-gray mt-6">Поделимся экспертизой, как через дизайн строить продукты, <br class="hidden md:block" /> которыми пользуются миллионы</p>
-          <img src="@/assets/svg/amplituda.svg" alt="amplituda" class="absolute w-[170px] md:w-auto  -top-14 right-0"></img>
+          <img src="/amplituda.png" alt="amplituda" class="absolute max-w-[284px] w-[170px] md:w-auto  -top-14 right-0"></img>
           <img src="@/assets/svg/left-zimran.svg" alt="left-zimran" class="absolute w-[30px] md:w-auto  -top-14 -left-4 md:hidden block"></img>
         </div>
           <div>
@@ -45,13 +45,35 @@ const closeRegister = () => { showRegister.value = false }
 
   </section>
   <section class="main-container mt-[100px] md:mt-[70px] relative ">
-    <div class="  flex items-center gap-4 md:gap-10 justify-center md:-mx-40">
+
+
+    <div class="items-wrap">
+      <!-- <div class=""> -->
+        <div class="items marquee  flex items-center gap-4 md:gap-10 justify-center md:-mx-40">
+          <h2 class=" text-[50px] md:text-[175px] leading-[120%px] font-bold uppercase text-royal-blue">design</h2>
+          <img src="@/assets/svg/zimran.svg" alt="zimran" class=" w-14 md:w-44" />
+          <h2 class=" text-[50px] md:text-[175px] leading-[120%px] font-bold uppercase">meetup</h2>
+        </div>
+      <!-- </div> -->
+      <!-- <div aria-hidden="true" class="items marquee"> -->
+        <div  aria-hidden="true" class=" items marquee  flex items-center gap-4 md:gap-10 justify-center md:-mx-40">
+          <h2 class=" text-[50px] md:text-[175px] leading-[120%px] font-bold uppercase text-royal-blue">design</h2>
+          <img src="@/assets/svg/zimran.svg" alt="zimran" class=" w-14 md:w-44" />
+          <h2 class=" text-[50px] md:text-[175px] leading-[120%px] font-bold uppercase">meetup</h2>
+        </div>
+      <!-- </div> -->
+    </div>
+
+
+
+
+    <!-- <div class="  flex items-center gap-4 md:gap-10 justify-center md:-mx-40">
       <h2 class=" text-[50px] md:text-[175px] leading-[120%px] font-bold uppercase text-royal-blue">design</h2>
       <img src="@/assets/svg/zimran.svg" alt="zimran" class=" w-14 md:w-44" />
       <h2 class=" text-[50px] md:text-[175px] leading-[120%px] font-bold uppercase">meetup</h2>
-    </div>
-    <img src="@/assets/svg/figma-align.svg" alt="figma-align" class="absolute w-[150px] md:w-auto -top-10 md:left-20 left-0" />
-    <img src="@/assets/svg/figma-jurttin.svg" alt="figma-jurttin" class="absolute w-[100px] md:w-auto -top-10 md:right-20 right-10" />
+    </div> -->
+    <img src="/figma-align.png" alt="figma-align" class="absolute max-w-[257px] w-[150px] md:w-auto -top-10 md:left-20 left-0" />
+    <img src="/figma-jurttin.png" alt="figma-jurttin" class="absolute max-w-[190px] w-[100px] md:w-auto -top-10 md:right-20 right-10" />
     <img src="@/assets/svg/frame-border.svg" alt="frame-border" class="absolute w-[50px] md:w-auto  -top-20 md:-top-40 -right-5 md:-right-40 hidden md:block" />
     <img src="@/assets/svg/frame-border-small.svg" alt="frame-border-small"  class="absolute   -top-20 md:-top-40 -right-10   md:hidden" />
 
@@ -60,8 +82,8 @@ const closeRegister = () => { showRegister.value = false }
   <section id="about" class=" mt-11 py-8 md:py-28 bg-image-gray relative">
     <div class="main-container">
 
-      <p class=" text-2xl md:text-5xl font-medium md:font-bold text-center">Cобираем <span class=" text-royal-blue">
-      <img src="@/assets/svg/zimran-heart.svg" alt="zimran-heart" class="absolute -top-10 right-0 w-[100px] md:w-auto" />
+      <p class=" text-2xl md:text-5xl font-bold text-center">Cобираем <span class=" text-royal-blue">
+      <img src="@/assets/svg/zimran-heart.svg" alt="zimran-heart" class="absolute -top-10 right-0 w-[80px] md:w-auto" />
         дизайнеров, исследователей 
         и продуктовых лидеров,
       </span>
@@ -70,12 +92,12 @@ const closeRegister = () => { showRegister.value = false }
       <div class=" mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-concrete">
         <div class=" py-8 px-6 rounded-3xl bg-card-1">
           <img src="@/assets/svg/card-1-icon.svg" alt="card-1-icon" width="115" height="115">
-          <p class=" text-3xl font-medium mt-6">Knowledge sharing</p>
+          <p class=" text-3xl font-bold md:font-medium mt-6">Knowledge sharing</p>
           <p class=" text-2xl font-medium mt-3">Разберём, как мы стали лидерами в одной из самых конкурентных ниш</p>
         </div>
         <div class=" py-8 px-6 rounded-3xl bg-card-2">
           <img src="@/assets/svg/card-2-icon.svg" alt="card-2-icon" width="115" height="115"></img>
-          <p class=" text-3xl font-medium mt-6">Design Talk</p>
+          <p class=" text-3xl font-bold md:font-medium mt-6">Design Talk</p>
           <p class=" text-2xl font-medium mt-3">Живой диалог и обмен опытом, включая реальные кейсы и факапы</p>
         </div>
         <div class=" py-8 px-6 rounded-3xl bg-card-3">
@@ -129,7 +151,7 @@ const closeRegister = () => { showRegister.value = false }
 
   <section id="who" class="main-container pt-8 md:pt-20 pb-10">
     <div class=" flex items-center gap-6 justify-center">
-      <h2 class=" text-5xl md:text-8xl font-medium md:font-bold text-center">КТО МЫ</h2>
+      <h2 class=" text-5xl md:text-8xl font-bold text-center">КТО МЫ</h2>
       <img src="@/assets/svg/idea.svg" alt="idea" width="78" height="78" class="w-[50px] md:w-[78px]">
     </div>
 
@@ -398,7 +420,7 @@ const closeRegister = () => { showRegister.value = false }
   <transition name="fade">
     <div v-if="showRegister" class="fixed inset-0 z-50 flex items-start md:items-center justify-center p-3 md:p-6 bg-black/60 backdrop-blur-sm overflow-y-auto" @click.self="closeRegister">
       <div class="relative w-full max-w-3xl">
-        <Feedback />
+        <Feedback @close="closeRegister" />
       </div>
     </div>
   </transition>
@@ -479,11 +501,47 @@ const closeRegister = () => { showRegister.value = false }
   position: relative;
 }
 
+
+
+.items-wrap {
+  position: relative;
+  display: flex;
+  /* overflow: hidden; */
+  user-select: none;
+  gap: 20px;
+}
+
+.items {
+  flex-shrink: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  min-width: 100%;
+}
+
+.marquee {
+  animation: scroll 20s linear infinite;
+}
+
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
 @media (min-width: 768px) {
   .program-ball {
     width: 70px;
     max-width: 70px;
     height: 70px;
+  }
+
+  .items-wrap {
+    gap: 400px;
   }
 }
 
