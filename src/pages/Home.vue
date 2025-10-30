@@ -274,7 +274,7 @@ const closeRegister = () => { showRegister.value = false }
       <div class=" flex gap-5 items-start mt-8 ">
         <div class=" program-ball text-xl font-medium text-black">12:45</div>
         <div class=" p-4 md:p-6 rounded-3xl bg-concrete flex-1">
-          <p class=" text-xl md:text-2xl font-medium text-black">Как превратить хаос обучения в понятный путь?
+          <p class=" text-xl md:text-2xl font-medium text-black">Как Превратить Хаос Обучения в Понятный Путь?
           </p>
           <div class=" mt-6 flex gap-3 md:gap-7">
             <video
