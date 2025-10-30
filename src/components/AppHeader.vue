@@ -6,8 +6,11 @@ import Feedback from '@/components/Feedback.vue'
 import { ref } from 'vue'
 
 const showRegister = ref(false)
+const showMobileMenu = ref(false)
 const openRegister = () => { showRegister.value = true }
 const closeRegister = () => { showRegister.value = false }
+const openMobileMenu = () => { showMobileMenu.value = true }
+const closeMobileMenu = () => { showMobileMenu.value = false }
 </script>
 
 <template>
@@ -39,7 +42,9 @@ const closeRegister = () => { showRegister.value = false }
           </button>
         </div>
 
-        <img src="@/assets/svg/burger.svg" alt="burger" width="46" height="46" class="md:hidden">
+        <button type="button" class="md:hidden" @click="openMobileMenu" aria-label="Открыть меню">
+          <img src="@/assets/svg/burger.svg" alt="burger" width="46" height="46">
+        </button>
       </div>
     </div>
 
@@ -52,6 +57,43 @@ const closeRegister = () => { showRegister.value = false }
       </div>
     </div>
   </transition>
+
+  <!-- Mobile Slideover Menu -->
+  <div class="md:hidden">
+    <!-- Overlay -->
+    <div
+      v-show="showMobileMenu"
+      class="fixed inset-0 z-40 bg-black/50 backdrop-blur-[2px] transition-opacity"
+      @click="closeMobileMenu"
+    ></div>
+
+    <!-- Panel -->
+    <div
+      class="fixed inset-y-0 right-0 z-50 w-full max-w-full bg-white shadow-xl transform transition-transform duration-300 ease-out flex flex-col"
+      :class="showMobileMenu ? 'translate-x-0' : 'translate-x-full'"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="flex items-center justify-between p-4 ">
+        <RouterLink to="/" @click.native="closeMobileMenu" class="shrink-0">
+          <img :src="logoUrl" alt="zimran" class="min-w-[170px] select-none" />
+        </RouterLink>
+        <button type="button" aria-label="Закрыть меню" @click="closeMobileMenu" class="w-10 h-10 rounded-full flex items-center justify-center text-neutral-700 hover:bg-neutral-100 active:bg-neutral-200">
+          <img src="@/assets/svg/x.svg" alt="x" width="46" height="46">
+        </button>
+      </div>
+
+      <nav class="p-4 flex-1 text-3xl font-medium text-black">
+        <a href="#about" @click="closeMobileMenu" class="block py-3 px-2 rounded hover:bg-neutral-100 active:bg-neutral-200 transition">О митапе</a>
+        <a href="#who" @click="closeMobileMenu" class="block py-3 px-2 rounded hover:bg-neutral-100 active:bg-neutral-200 transition">Кто мы?</a>
+        <a href="#program" @click="closeMobileMenu" class="block py-3 px-2 rounded hover:bg-neutral-100 active:bg-neutral-200 transition">Программа</a>
+        <a href="#faq" @click="closeMobileMenu" class="block py-3 px-2 rounded hover:bg-neutral-100 active:bg-neutral-200 transition">FAQ</a>
+        <a href="#footer" @click="closeMobileMenu" class="block py-3 px-2 rounded hover:bg-neutral-100 active:bg-neutral-200 transition">Контакты</a>
+      </nav>
+
+     
+    </div>
+  </div>
 
     
   </header>

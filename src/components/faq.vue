@@ -36,7 +36,7 @@ const faqs = [
   }
 ]
 
-const openedIndex = ref(-1)
+const openedIndex = ref(0)
 const toggle = (idx) => {
   openedIndex.value = openedIndex.value === idx ? -1 : idx
 }
@@ -44,17 +44,17 @@ const toggle = (idx) => {
 
 <template>
   <section id="faq" class="relative py-24 ">
- <img src="@/assets/svg/bg-extra.svg" alt="bg-extra" class="absolute top-0 left-0 select-none pointer-events-none" />
+ <img src="@/assets/svg/bg-extra.svg" alt="bg-extra" class="absolute top-0 left-0 right-0 md:right-auto select-none pointer-events-none" />
  <img src="@/assets/svg/bg-extra-bottom.svg" alt="bg-extra-bottom" class="absolute bottom-0 left-0 select-none pointer-events-none" />
     <div class="main-container grid grid-cols-1 lg:grid-cols-2 gap-10">
-      <div class=" md:mt-[250px]">
+      <div class=" mt-10 md:mt-[250px]">
         <img src="@/assets/svg/question.svg" alt="question" class="w-20 h-20">
         <h3 class=" text-[50px] md:text-[64px] leading-[1.05] font-medium uppercase text-royal-blue mt-4">
           ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
         </h3>
       </div>
 
-      <div class="space-y-2">
+      <div class="space-y-2 md:min-h-[950px]">
         <div
           v-for="(item, idx) in faqs"
           :key="item.q"
@@ -74,7 +74,7 @@ const toggle = (idx) => {
           </button>
           <transition name="faq-reveal">
             <div v-show="openedIndex === idx" class="px-6 pb-6 -mt-2">
-              <p class="text-lg text-mid-gray">{{ item.a }}</p>
+              <p class="text-lg text-mid-gray font-normal" >{{ item.a }}</p>
             </div>
           </transition>
         </div>

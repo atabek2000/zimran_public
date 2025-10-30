@@ -13,7 +13,7 @@ const closeRegister = () => { showRegister.value = false }
     <img src="@/assets/svg/left-zimran.svg" alt="left-zimran" class="absolute -top-10 left-0 hidden md:block"></img>
     <div class="main-container ">
 
-        <div class="relative flex items-center justify-center gap-3 text-base md:text-xl font-medium text-cornflower-blue p-2.5 border-2 border-dashed border-cornflower-blue w-fit mx-auto rounded-lg">
+        <div class="relative flex items-center justify-center gap-3 text-xs md:text-xl font-medium text-cornflower-blue p-2.5 border-2 border-dashed border-cornflower-blue md:w-fit mx-auto rounded-lg">
           <p class=" border border-cornflower-blue rounded-full px-2.5 md:px-4 py-2">
             29 ноября
           </p>
@@ -27,7 +27,7 @@ const closeRegister = () => { showRegister.value = false }
         </div>
         <div class=" relative mt-20 md:mt-0">
     
-          <h2 class=" text-[28px] leading-[30px] md:text-[90px] md:leading-[94px] font-medium text-center">Как через дизайн строить топ-1 продукты в мире</h2>
+          <h2 class=" text-[28px] leading-[30px] md:text-[90px] md:leading-[94px] font-medium md:font-bold text-center">Как через дизайн строить топ-1 продукты в мире</h2>
           <p class=" text-center text-base md:text-2xl font-medium text-dove-gray mt-6">Поделимся экспертизой, как через дизайн строить продукты, <br class="hidden md:block" /> которыми пользуются миллионы</p>
           <img src="@/assets/svg/amplituda.svg" alt="amplituda" class="absolute w-[170px] md:w-auto  -top-14 right-0"></img>
           <img src="@/assets/svg/left-zimran.svg" alt="left-zimran" class="absolute w-[30px] md:w-auto  -top-14 -left-4 md:hidden block"></img>
@@ -36,7 +36,7 @@ const closeRegister = () => { showRegister.value = false }
           <button
           type="button"
           @click="openRegister"
-          class="block rounded-full bg-black md:w-lg mx-auto py-4 text-base text-center font-medium mt-8 text-concrete  hover:bg-neutral-900 active:bg-neutral-800 transition"
+          class="block rounded-full bg-black md:w-lg mx-auto px-6 py-2 md:py-4 text-base text-center font-medium mt-8 text-concrete  hover:bg-black/0 hover:ring-1 hover:ring-black hover:text-black transition"
           >
           ЗАРЕГИСТРИРОВАТЬСЯ
         </button>
@@ -44,23 +44,24 @@ const closeRegister = () => { showRegister.value = false }
     </div>
 
   </section>
-  <section class="main-container mt-[100px] md:mt-[70px] relative">
-    <div class=" flex items-center gap-4 md:gap-10 justify-center md:-mx-40">
-      <h2 class=" text-[50px] md:text-[175px] leading-[120%px] font-medium uppercase text-royal-blue">design</h2>
+  <section class="main-container mt-[100px] md:mt-[70px] relative ">
+    <div class="  flex items-center gap-4 md:gap-10 justify-center md:-mx-40">
+      <h2 class=" text-[50px] md:text-[175px] leading-[120%px] font-bold uppercase text-royal-blue">design</h2>
       <img src="@/assets/svg/zimran.svg" alt="zimran" class=" w-14 md:w-44" />
-      <h2 class=" text-[50px] md:text-[175px] leading-[120%px] font-medium uppercase">meetup</h2>
+      <h2 class=" text-[50px] md:text-[175px] leading-[120%px] font-bold uppercase">meetup</h2>
     </div>
     <img src="@/assets/svg/figma-align.svg" alt="figma-align" class="absolute w-[150px] md:w-auto -top-10 md:left-20 left-0" />
     <img src="@/assets/svg/figma-jurttin.svg" alt="figma-jurttin" class="absolute w-[100px] md:w-auto -top-10 md:right-20 right-10" />
-    <img src="@/assets/svg/frame-border.svg" alt="frame-border" class="absolute w-[50px] md:w-auto  -top-20 md:-top-40 -right-5" />
+    <img src="@/assets/svg/frame-border.svg" alt="frame-border" class="absolute w-[50px] md:w-auto  -top-20 md:-top-40 -right-5 md:-right-40 hidden md:block" />
+    <img src="@/assets/svg/frame-border-small.svg" alt="frame-border-small"  class="absolute   -top-20 md:-top-40 -right-10   md:hidden" />
 
   </section>
  
-  <section id="about" class=" mt-11 py-28 bg-image-gray relative">
+  <section id="about" class=" mt-11 py-8 md:py-28 bg-image-gray relative">
     <div class="main-container">
 
-      <p class=" text-2xl md:text-5xl font-medium text-center">Cобираем <span class=" text-royal-blue">
-      <img src="@/assets/svg/zimran-heart.svg" alt="zimran-heart" class="absolute -top-10 right-0" />
+      <p class=" text-2xl md:text-5xl font-medium md:font-bold text-center">Cобираем <span class=" text-royal-blue">
+      <img src="@/assets/svg/zimran-heart.svg" alt="zimran-heart" class="absolute -top-10 right-0 w-[100px] md:w-auto" />
         дизайнеров, исследователей 
         и продуктовых лидеров,
       </span>
@@ -87,11 +88,11 @@ const closeRegister = () => { showRegister.value = false }
 
   </section>
 
-  <section id="contacts" class=" bg-black mt-11 relative">
+  <section id="contacts" class=" bg-black  md:mt-0 relative">
     <div class="main-container text-concrete py-10 md:py-20">
       <div class=" w-fit">
 
-      <h3 class=" text-5xl md:text-8xl font-medium ">Где и Когда</h3>
+      <h3 class=" text-5xl md:text-8xl font-medium  md:font-bold ">Где и Когда</h3>
       <p class=" text-xl md:text-2xl font-medium text-royal-blue mt-2">*Вход только по регистрации, места ограничены</p>
 
       <div class=" mt-12 space-y-3">
@@ -111,7 +112,7 @@ const closeRegister = () => { showRegister.value = false }
 
       <button
             @click="openRegister"
-            class=" block mt-12 rounded-full bg-royal-blue py-4 text-base font-medium w-full text-concrete text-center hover:bg-neutral-900 active:bg-neutral-800 transition"
+            class=" block mt-12 rounded-full bg-royal-blue py-4 text-base font-medium w-full text-concrete text-center hover:bg-royal-blue/0 hover:ring-1 hover:ring-royal-blue hover:text-royal-blue transition"
           >
           ПРИНЯТЬ УЧАСТИЕ В МИТАПЕ
     </button>
@@ -126,29 +127,29 @@ const closeRegister = () => { showRegister.value = false }
     
   </section>
 
-  <section id="who" class="main-container pt-20 pb-10">
+  <section id="who" class="main-container pt-8 md:pt-20 pb-10">
     <div class=" flex items-center gap-6 justify-center">
-      <h2 class=" text-5xl md:text-8xl font-medium text-center">КТО МЫ</h2>
-      <img src="@/assets/svg/idea.svg" alt="idea" width="78" height="78">
+      <h2 class=" text-5xl md:text-8xl font-medium md:font-bold text-center">КТО МЫ</h2>
+      <img src="@/assets/svg/idea.svg" alt="idea" width="78" height="78" class="w-[50px] md:w-[78px]">
     </div>
 
     <p class=" text-xl md:text-4xl font-medium text-center mt-6">Zimran — <span class=" text-royal-blue">people-powered system.</span>  Мы создаём продукты и культуру для <span class=" text-royal-blue">«EXTRA людей»</span>, которые меняют мир</p>
 
-    <img src="/gallery.png" alt="gallery" class="mt-8 w-full">
+    <img src="/gallery.png" alt="gallery" class="mt-8 w-full hidden md:block">
+    <img src="/gallery-small.png" alt="gallery-small" class="mt-8 w-full md:hidden">
 
-    <div class="flex flex-col md:flex-row justify-between mt-20 gap-6 md:gap-0">
+    <div class="flex flex-col md:flex-row justify-between mt-10 gap-6 md:gap-0">
 
       <div class="">
-        <p class=" text-2xl md:text-5xl font-medium">Хотите узнать нас лучше? </p>
-        <p class=" text-2xl md:text-5xl font-medium ">Загляните к нам на сайт</p>
-
-      <a
-            href="https://zimran.io/"
-            target="_blank"
-            class=" block mt-6 rounded-full bg-royal-blue py-4 text-base font-medium text-concrete text-center max-w-lg hover:bg-neutral-900 active:bg-neutral-800 transition"
-          >
-          ПОСЕТИТЬ САЙТ
-      </a>
+        <p class=" text-2xl md:text-5xl font-medium md:font-bold">Хотите узнать нас лучше? </p>
+        <p class=" text-2xl md:text-5xl font-medium md:font-bold ">Загляните к нам на сайт</p>
+        <a
+              href="https://zimran.io/"
+              target="_blank"
+              class=" block mt-6 rounded-full bg-royal-blue py-4 text-base font-medium text-concrete text-center max-w-lg hover:bg-royal-blue/0 hover:ring-1 hover:ring-royal-blue hover:text-royal-blue transition"
+            >
+            ПОСЕТИТЬ САЙТ
+        </a>
       </div>
       <img src="@/assets/svg/zimran-text.svg" alt="zimran-text" class=" ">
     </div>
@@ -158,8 +159,8 @@ const closeRegister = () => { showRegister.value = false }
   <section id="program" class=" text-concrete py-20 bg-program">
     <div class="main-container">
     <div class="flex items-center gap-6 justify-center">
-      <h2 class=" text-5xl md:text-8xl font-medium text-center">ПРОГРАММА</h2>
-      <img src="@/assets/svg/heart.svg" alt="heart" width="78" height="78">
+      <h2 class=" text-5xl md:text-8xl font-medium md:font-bold text-center">ПРОГРАММА</h2>
+      <img src="@/assets/svg/heart.svg" alt="heart"  class="w-[44px] md:w-[78px]">
     </div>
 
     <div class="relative mt-9">
@@ -174,25 +175,27 @@ const closeRegister = () => { showRegister.value = false }
       
       <div class=" flex gap-5 items-start mt-8 ">
         <div class=" program-ball text-xl font-medium text-black">11:00</div>
-        <div class=" p-6 rounded-3xl bg-concrete flex-1">
+        <div class=" p-4 md:p-6 rounded-3xl bg-concrete flex-1">
           <p class=" text-xl md:text-2xl font-medium text-black">Открытие</p>
-          <div class=" mt-6 flex gap-7">
+          <div class=" mt-6 flex gap-3 md:gap-7">
             <video
               autoplay
               muted
               loop
               playsinline
-              class=" w-[90px] h-[90px] object-cover rounded-2xl"
+              class=" w-[70px] h-[70px] md:w-[90px] md:h-[90px] object-cover rounded-2xl"
             >
               <source src="/video_mansur.mp4" type="video/mp4" />
             </video>
             <!-- <img src="/avatar.png" alt="avatar"  height="90" class=" max-h-[90px] w-auto"> -->
             <div >
               <p class=" text-lg md:text-2xl font-medium text-black">Абильмансур Омар</p>
-              <p class=" text-sm md:text-base font-medium mt-1 text-dove-gray">Product Designer at Finelo</p>
-              <p class=" text-sm md:text-base font-medium mt-1 text-royal-blue flex items-center gap-1">
-                <img src="@/assets/svg/linked.svg" alt="linked" width="16" height="16">
-                Linkedin</p>
+              <p class=" text-xs md:text-base font-medium mt-1 text-dove-gray">Product Designer at Finelo</p>
+              <a href="https://www.linkedin.com/in/mansur-omar-4559911a0/" target="_blank">
+                <p class=" text-xs md:text-base font-medium mt-1 text-royal-blue flex items-center gap-1">
+                  <img src="@/assets/svg/linked.svg" alt="linked" width="16" height="16">
+                  Linkedin</p>
+                </a>
             </div>
           </div>
         </div>
@@ -200,24 +203,26 @@ const closeRegister = () => { showRegister.value = false }
       
       <div class=" flex gap-5 items-start mt-8 ">
         <div class=" program-ball text-xl font-medium text-black">11:15</div>
-        <div class=" p-6 rounded-3xl bg-concrete flex-1">
+        <div class=" p-4 md:p-6 rounded-3xl bg-concrete flex-1">
           <p class=" text-xl md:text-2xl font-medium text-black">What 250,000+ Daily Users Teach You About Design?</p>
-          <div class=" mt-6 flex gap-7">
+          <div class=" mt-6 flex gap-3 md:gap-7">
             <video
               autoplay
               muted
               loop
               playsinline
-              class=" w-[90px] h-[90px] object-cover rounded-2xl"
+              class=" w-[70px] h-[70px] md:w-[90px] md:h-[90px] object-cover rounded-2xl"
             >
               <source src="/video_laura.mp4" type="video/mp4" />
             </video>
             <div >
               <p class=" text-xl md:text-2xl font-medium text-black">Лаура Рахимова</p>
-              <p class=" text-base font-medium mt-1 text-dove-gray">Product Designer, Funnel Team</p>
-              <p class=" text-base font-medium mt-1 text-royal-blue flex items-center gap-1">
+              <p class=" text-xs md: font-medium mt-1 text-dove-gray">Product Designer, Funnel Team</p>
+              <a href="https://www.linkedin.com/in/laura-rakhimova-913810259/" target="_blank">
+                <p class=" text-xs md: font-medium mt-1 text-royal-blue flex items-center gap-1">
                 <img src="@/assets/svg/linked.svg" alt="linked" width="16" height="16">
                 Linkedin</p>
+                </a>
             </div>
           </div>
         </div>
@@ -233,24 +238,26 @@ const closeRegister = () => { showRegister.value = false }
 
       <div class=" flex gap-5 items-start mt-8 ">
         <div class=" program-ball text-xl font-medium text-black">12:00</div>
-        <div class=" p-6 rounded-3xl bg-concrete flex-1">
-          <p class=" text-xl md:text-2xl font-medium text-black">Как мы искали идеальный первый опыт?</p>
-          <div class=" mt-6 flex gap-7">
+        <div class=" p-4 md:p-6 rounded-3xl bg-concrete flex-1">
+          <p class=" text-xl md:text-2xl font-medium text-black">Как Мы Искали Идеальный Первый Опыт?</p>
+          <div class=" mt-6 flex gap-3 md:gap-7">
             <video
               autoplay
               muted
               loop
               playsinline
-              class=" w-[90px] h-[90px] object-cover rounded-2xl"
+              class=" w-[70px] h-[70px] md:w-[90px] md:h-[90px] object-cover rounded-2xl"
             >
               <source src="/video_mansur.mp4" type="video/mp4" />
             </video>
             <div >
               <p class=" text-xl md:text-2xl font-medium text-black">Абильмансур Омар</p>
-              <p class=" text-base font-medium mt-1 text-dove-gray">Product Designer at Finelo</p>
-              <p class=" text-base font-medium mt-1 text-royal-blue flex items-center gap-1">
-                <img src="@/assets/svg/linked.svg" alt="linked" width="16" height="16">
-                Linkedin</p>
+              <p class=" text-xs md: font-medium mt-1 text-dove-gray">Product Designer at Finelo</p>
+              <a href="https://www.linkedin.com/in/mansur-omar-4559911a0/" target="_blank">
+              <p class=" text-xs md: font-medium mt-1 text-royal-blue flex items-center gap-1">
+                  <img src="@/assets/svg/linked.svg" alt="linked" width="16" height="16">
+                  Linkedin</p>
+                </a>
             </div>
           </div>
         </div>
@@ -260,30 +267,34 @@ const closeRegister = () => { showRegister.value = false }
         <div class=" program-ball text-xl font-medium text-black">12:30</div>
         <div class="flex items-center gap-1 ">
           <img src="@/assets/svg/pin.svg" alt="pin" width="24" height="24">
-          <p class=" text-concrete text-2xtext-xl md:text-2xll font-medium ">Break </p>
+          <p class=" text-concrete text-xl md:text-2xl font-medium ">Break </p>
         </div>
       </div>
 
       <div class=" flex gap-5 items-start mt-8 ">
         <div class=" program-ball text-xl font-medium text-black">12:45</div>
-        <div class=" p-6 rounded-3xl bg-concrete flex-1">
-          <p class=" text-xl md:text-2xl font-medium text-black">Learning Pathways</p>
-          <div class=" mt-6 flex gap-7">
+        <div class=" p-4 md:p-6 rounded-3xl bg-concrete flex-1">
+          <p class=" text-xl md:text-2xl font-medium text-black">Как превратить хаос обучения в понятный путь?
+          </p>
+          <div class=" mt-6 flex gap-3 md:gap-7">
             <video
               autoplay
               muted
               loop
               playsinline
-              class=" w-[90px] h-[90px] object-cover rounded-2xl"
+              class=" w-[70px] h-[70px] md:w-[90px] md:h-[90px] object-cover rounded-2xl"
             >
               <source src="/video_asia.mp4" type="video/mp4" />
             </video>
             <div >
               <p class=" text-xl md:text-2xl font-medium text-black">Асия Сарсен</p>
-              <p class=" text-base font-medium mt-1 text-dove-gray">Product Designer at Finelo</p>
-              <p class=" text-base font-medium mt-1 text-royal-blue flex items-center gap-1">
-                <img src="@/assets/svg/linked.svg" alt="linked" width="16" height="16">
-                Linkedin</p>
+              <p class=" text-xs md: font-medium mt-1 text-dove-gray">Product Designer at Finelo</p>
+              <a href="https://www.linkedin.com/in/assiya-sarsen-5661a2336/" target="_blank">
+
+                <p class=" text-xs md: font-medium mt-1 text-royal-blue flex items-center gap-1">
+                  <img src="@/assets/svg/linked.svg" alt="linked" width="16" height="16">
+                  Linkedin</p>
+                </a>
             </div>
           </div>
         </div>
@@ -293,48 +304,54 @@ const closeRegister = () => { showRegister.value = false }
         <div class=" program-ball text-xl font-medium text-black">13:15</div>
         <div class="flex items-center gap-1 ">
           <img src="@/assets/svg/pin.svg" alt="pin" width="24" height="24">
-          <p class=" text-concrete text-xl md:text-2xl font-medium ">Break&Dinner </p>
+          <p class=" text-concrete text-xl md:text-2xl font-medium ">Break </p>
         </div>
       </div>
 
       <div class=" flex gap-5 items-start mt-8 ">
         <div class=" program-ball text-xl font-medium text-black">13:30</div>
-        <div class=" p-6 rounded-3xl bg-concrete flex-1">
-          <p class=" text-xl md:text-2xl font-medium text-black">Habit Formation</p>
-          <div class=" mt-6 flex gap-7">
+        <div class=" p-4 md:p-6 rounded-3xl bg-concrete flex-1">
+          <p class=" text-xl md:text-2xl font-medium text-black">One to 50</p>
+          <div class=" mt-6 flex gap-3 md:gap-7">
             <video
               autoplay
               muted
               loop
               playsinline
-              class=" w-[90px] h-[90px] object-cover rounded-2xl"
+              class=" w-[70px] h-[70px] md:w-[90px] md:h-[90px] object-cover rounded-2xl"
             >
               <source src="/video_arman.mp4" type="video/mp4" />
             </video>
             <div >
               <p class=" text-xl md:text-2xl font-medium text-black">Арман Кубенов</p>
-              <p class=" text-base font-medium mt-1 text-dove-gray">Product Designer at Coursiv</p>
-              <p class=" text-base font-medium mt-1 text-royal-blue flex items-center gap-1">
-                <img src="@/assets/svg/linked.svg" alt="linked" width="16" height="16">
-                Linkedin</p>
+              <p class=" text-xs md: font-medium mt-1 text-dove-gray">Product Designer at Coursiv</p>
+              <a href="https://www.linkedin.com/in/arman-kubenov-6260b3a7/" target="_blank">
+
+                <p class=" text-xs md: font-medium mt-1 text-royal-blue flex items-center gap-1">
+                  <img src="@/assets/svg/linked.svg" alt="linked" width="16" height="16">
+                  Linkedin</p>
+                </a>
             </div>
           </div>
-          <div class=" mt-8 flex gap-7">
+          <div class=" mt-8 flex gap-3 md:gap-7">
             <video
               autoplay
               muted
               loop
               playsinline
-              class=" w-[90px] h-[90px] object-cover rounded-2xl"
+              class=" w-[70px] h-[70px] md:w-[90px] md:h-[90px] object-cover rounded-2xl"
             >
               <source src="/video_alina.mp4" type="video/mp4" />
             </video>
             <div >
               <p class=" text-xl md:text-2xl font-medium text-black">Алина Шишкова</p>
-              <p class=" text-base font-medium mt-1 text-dove-gray">Product Designer at Coursiv</p>
-              <p class=" text-base font-medium mt-1 text-royal-blue flex items-center gap-1">
-                <img src="@/assets/svg/linked.svg" alt="linked" width="16" height="16">
-                Linkedin</p>
+              <p class=" text-xs md: font-medium mt-1 text-dove-gray">Product Designer at Coursiv</p>
+              <a href="https://www.linkedin.com/in/alina-shishkova-67b510278/" target="_blank">
+
+                <p class=" text-xs md: font-medium mt-1 text-royal-blue flex items-center gap-1">
+                  <img src="@/assets/svg/linked.svg" alt="linked" width="16" height="16">
+                  Linkedin</p>
+                </a>
             </div>
           </div>
         </div>
@@ -344,7 +361,7 @@ const closeRegister = () => { showRegister.value = false }
         <div class=" program-ball text-base font-medium text-black">14:00 <br />15:40</div>
         <div class="flex items-center gap-1 ">
           <img src="@/assets/svg/pin.svg" alt="pin" width="24" height="24">
-          <p class=" text-concrete text-xl md:text-2xl font-medium ">Panel Session & Networking </p>
+          <p class=" text-concrete text-xl md:text-2xl font-medium "> Networking </p>
         </div>
       </div>
 
@@ -354,22 +371,22 @@ const closeRegister = () => { showRegister.value = false }
 
   
 
-  <section class="bg-black py-10 md:py-20 text-concrete relative">
+  <section class="bg-black py-10 md:py-20 text-concrete relative overflow-hidden">
     <div class="main-container">
-      <div class="flex flex-col md:flex-row justify-between mt-0 gap-6  md:mt-20">
+      <div class="flex flex-col md:flex-row justify-between mt-0 gap-6  ">
 
         <div class="">
-        <p class=" text-2xl md:text-5xl font-medium">Количество мест ограничено — успей занять своё! </p>
+        <p class=" text-3xl md:text-5xl font-medium md:font-bold">Количество мест ограничено — успей занять своё! </p>
 
         <button
               @click="openRegister"
-              class=" block mt-6 rounded-full bg-royal-blue py-4 text-base font-medium text-concrete text-center w-full max-w-lg hover:bg-neutral-900 active:bg-neutral-800 transition"
+              class=" block mt-6 rounded-full bg-royal-blue py-4 text-base font-medium text-concrete text-center w-full max-w-lg hover:bg-royal-blue/0 hover:ring-1 hover:ring-royal-blue hover:text-royal-blue transition"
             >
             ЗАБРОНИРОВАТЬ МЕСТО
             </button>
         </div>
       <img src="@/assets/svg/logo-white.svg" alt="logo-white" class=" w-3/4 md:w-auto mx-auto md:mx-0 ">
-        <img src="@/assets/svg/zimran-bron-icon.svg" alt="zimran-bron-icon" class=" absolute top-0 md:bottom-0 md:top-auto right-0 w-[100px] md:w-auto ">
+        <img src="@/assets/svg/zimran-bron-icon.svg" alt="zimran-bron-icon" class=" absolute top-5 md:-bottom-24 md:top-auto -right-10 md:-right-24 w-[100px] md:w-auto ">
       </div>
     </div>
   </section>
@@ -381,7 +398,6 @@ const closeRegister = () => { showRegister.value = false }
   <transition name="fade">
     <div v-if="showRegister" class="fixed inset-0 z-50 flex items-start md:items-center justify-center p-3 md:p-6 bg-black/60 backdrop-blur-sm overflow-y-auto" @click.self="closeRegister">
       <div class="relative w-full max-w-3xl">
-        <button type="button" @click="closeRegister" aria-label="Close" class="absolute -top-3 -right-3 md:-right-4 md:-top-4 z-10 bg-black text-concrete rounded-full w-10 h-10 flex items-center justify-center shadow-lg">×</button>
         <Feedback />
       </div>
     </div>
@@ -392,12 +408,18 @@ const closeRegister = () => { showRegister.value = false }
         <p class=" text-2xl font-medium">Адрес:</p>
         <p class=" mt-3 text-base font-medium">SmArt.Point, Байзакова 280, 1 этаж</p>
         <p class=" text-2xl font-medium mt-8">Время проведения:</p>
-        <p class=" mt-3 text-base font-medium">29 ноября, 11:00</p>
+        <p class=" mt-3 text-base font-medium">29 ноября, 10:30</p>
       </div>
         <div class=" flex gap-8 ">
-          <img src="@/assets/svg/social/linked.svg" alt="linked" width="60" height="60">
-          <img src="@/assets/svg/social/mail.svg" alt="mail" width="60" height="60">
-          <img src="@/assets/svg/social/telegram.svg" alt="telegram" width="60" height="60">
+          <a href="https://zimran.io/" target="_blank">
+            <img src="@/assets/svg/social/linked.svg" alt="linked" width="60" height="60">
+          </a>
+          <a href="mailto:tech@zimran.io" target="_blank">
+            <img src="@/assets/svg/social/mail.svg" alt="mail" width="60" height="60">
+          </a>
+          <a href="https://www.instagram.com/zimran.team?igsh=d3lpN3Fqc2k3Mm96" target="_blank">
+            <img src="@/assets/svg/social/insta.svg" alt="telegram" width="60" height="60">
+          </a>
         </div>
     </div>
       <img src="@/assets/svg/zimran-footer.svg" alt="zimran-footer" class="w-full mt-10 md:mt-20">
@@ -409,7 +431,7 @@ const closeRegister = () => { showRegister.value = false }
 .bg-image-gray {
   background-image: url('@/assets/svg/bg-gray.svg');
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 

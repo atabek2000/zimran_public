@@ -4,6 +4,10 @@ html {
     scroll-behavior: smooth;
   }
 
+  button, a {
+    cursor: pointer;
+  }
+
 /* Desktop (1440*832)По краям 80 пх  */
 .main-container {
     max-width: 1440px;
@@ -28,6 +32,7 @@ html {
     --color-cornflower-blue: #7367FF;
     --color-royal-blue: #5B42DC;
     --color-alto: #DDDDDD;
+    --color-mercury: #E7E7E7;
   }
 
 /* UpMax font faces */

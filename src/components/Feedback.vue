@@ -133,7 +133,7 @@ async function handleSubmit() {
           <button
             type="submit"
             :disabled="!isValid || isSubmitting"
-            class="w-full rounded-full bg-black text-concrete py-4 font-medium disabled:opacity-50 disabled:cursor-not-allowed hover:bg-neutral-900 active:bg-neutral-800 transition"
+            class="w-full rounded-full bg-black text-concrete py-4 font-medium disabled:bg-mercury  disabled:text-alto disabled:cursor-not-allowed hover:bg-neutral-900/0 hover:ring-1 hover:ring-black hover:text-black transition"
           >
             {{ isSubmitting ? 'Отправка...' : 'ОСТАВИТЬ ЗАЯВКУ' }}
           </button>
