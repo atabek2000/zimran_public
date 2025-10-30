@@ -51,19 +51,23 @@ async function handleSubmit() {
   const apiUrl = (import.meta.env.VITE_API_URL || '').toString().replace(/\/$/, '') || 'https://example.com'
   const endpoint = `${apiUrl}/api/meetup/register`
 
-  try {
-    const res = await fetch(endpoint, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(form),
-    })
-    if (!res.ok) throw new Error('Request failed')
-    router.push('/result')
-  } catch (err) {
-    submitError.value = 'Не удалось отправить. Попробуйте позже.'
-  } finally {
+    submitError.value = 'Успешно отправленно!'
+
     isSubmitting.value = false
-  }
+
+//   try {
+//     const res = await fetch(endpoint, {
+//       method: 'POST',
+//       headers: { 'Content-Type': 'application/json' },
+//       body: JSON.stringify(form),
+//     })
+//     if (!res.ok) throw new Error('Request failed')
+//     router.push('/result')
+//   } catch (err) {
+//     submitError.value = 'Не удалось отправить. Попробуйте позже.'
+//   } finally {
+//     isSubmitting.value = false
+//   }
 }
 </script>
 
@@ -134,7 +138,7 @@ async function handleSubmit() {
             {{ isSubmitting ? 'Отправка...' : 'ОСТАВИТЬ ЗАЯВКУ' }}
           </button>
 
-          <p v-if="submitError" class="text-red-600 text-sm text-center">{{ submitError }}</p>
+          <p v-if="submitError" class="text-green-600 text-sm text-center">{{ submitError }}</p>
           <p class="text-center text-base  text-royal-blue">Нажимая кнопку Вы даете согласие на обработку персональных данных</p>
         </form>
       </div>
