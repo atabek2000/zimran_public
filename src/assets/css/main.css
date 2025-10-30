@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+html {
+    scroll-behavior: smooth;
+  }
 
 /* Desktop (1440*832)По краям 80 пх  */
 .main-container {
@@ -8,11 +11,83 @@
     padding-right: 80px;
     margin-left: auto;
     margin-right: auto;
+    /* overflow-x: hidden; */
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 }
 
 @theme {
     --color-dove-gray: #636363;
+    --color-mid-gray: #646369;
     --color-concrete: #f2f2f2;
     --color-cornflower-blue: #7367FF;
     --color-royal-blue: #5B42DC;
+    --color-alto: #DDDDDD;
   }
+
+/* UpMax font faces */
+@font-face {
+    font-family: 'UpMax';
+    src: url('@/assets/fonts/UpMax/UpMax Regular/web/upmax-regular_w.woff2') format('woff2'),
+         url('@/assets/fonts/UpMax/UpMax Regular/web/upmax-regular_w.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'UpMax';
+    src: url('@/assets/fonts/UpMax/UpMax Medium/web/upmax-medium_w.woff2') format('woff2'),
+         url('@/assets/fonts/UpMax/UpMax Medium/web/upmax-medium_w.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'UpMax';
+    src: url('@/assets/fonts/UpMax/UpMax Bold/web/upmax-bold_w.woff2') format('woff2'),
+         url('@/assets/fonts/UpMax/UpMax Bold/web/upmax-bold_w.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'UpMax';
+    src: url('@/assets/fonts/UpMax/UpMax Light/web/upmax-light_w.woff2') format('woff2'),
+         url('@/assets/fonts/UpMax/UpMax Light/web/upmax-light_w.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'UpMax';
+    src: url('@/assets/fonts/UpMax/UpMax Italic/web/upmax-regularitalic_w.woff2') format('woff2'),
+         url('@/assets/fonts/UpMax/UpMax Italic/web/upmax-regularitalic_w.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'UpMax';
+    src: url('@/assets/fonts/UpMax/UpMax Medium Italic/web/upmax-mediumitalic_w.woff2') format('woff2'),
+         url('@/assets/fonts/UpMax/UpMax Medium Italic/web/upmax-mediumitalic_w.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'UpMax';
+    src: url('@/assets/fonts/UpMax/UpMax Bold Italic/web/upmax-bolditalic_w.woff2') format('woff2'),
+         url('@/assets/fonts/UpMax/UpMax Bold Italic/web/upmax-bolditalic_w.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+html, body {
+    font-family: 'UpMax', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
