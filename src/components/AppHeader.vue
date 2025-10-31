@@ -36,7 +36,7 @@ const closeMobileMenu = () => { showMobileMenu.value = false }
           <button
             type="button"
             @click="openRegister"
-            class=" rounded-full bg-black px-6 py-3 text-base font-medium text-concrete whitespace-nowrap hover:bg-black/0 hover:ring-1 hover:ring-black hover:text-black transition"
+            class=" rounded-full bg-black px-6 py-3 text-base font-medium text-concrete whitespace-nowrap hover:bg-black/0 hover:ring-1 hover:ring-black hover:text-black transition-all duration-300"
           >
             Оставить заявку
           </button>
