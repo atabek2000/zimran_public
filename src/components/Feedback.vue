@@ -32,20 +32,33 @@ const errors = computed(() => {
     fullName: '',
     email: '',
     linkedin: '',
+    company: '',
+    position: '',
   }
   if (!form.fullName.trim()) e.fullName = 'Укажите имя и фамилию'
   if (!form.email.trim()) e.email = 'Укажите email'
   else if (!emailRegex.test(form.email)) e.email = 'Неверный формат email'
-  if (form.linkedin && !/^https?:\/\//i.test(form.linkedin)) e.linkedin = 'Добавьте полный URL (https://...)'
+  if (!form.linkedin.trim()) e.linkedin = 'Укажите ссылку на Linkedin'
+  else if (!/^https?:\/\//i.test(form.linkedin)) e.linkedin = 'Добавьте полный URL (https://...)'
+  if (!form.company.trim()) e.company = 'Укажите место работы'
+  if (!form.position.trim()) e.position = 'Укажите должность'
   return e
 })
 
-const isValid = computed(() => !errors.value.fullName && !errors.value.email && !errors.value.linkedin)
+const isValid = computed(() =>
+  !errors.value.fullName &&
+  !errors.value.email &&
+  !errors.value.linkedin &&
+  !errors.value.company &&
+  !errors.value.position
+)
 
 async function handleSubmit() {
   touched.fullName = true
   touched.email = true
   touched.linkedin = true
+  touched.company = true
+  touched.position = true
   if (!isValid.value) return
   isSubmitting.value = true
   submitError.value = ''
@@ -92,6 +105,7 @@ async function handleSubmit() {
               type="text"
               placeholder="Введите ваше Имя и Фамилию"
               class="w-full rounded-xl border border-alto px-4 py-3 focus:outline-none focus:ring-2 focus:ring-royal-blue"
+              required
             />
             <p v-if="touched.fullName && errors.fullName" class="text-red-600 text-sm mt-1">{{ errors.fullName }}</p>
           </div>
@@ -104,6 +118,7 @@ async function handleSubmit() {
               type="email"
               placeholder="Введите ваш email"
               class="w-full rounded-xl border border-alto px-4 py-3 focus:outline-none focus:ring-2 focus:ring-royal-blue"
+              required
             />
             <p v-if="touched.email && errors.email" class="text-red-600 text-sm mt-1">{{ errors.email }}</p>
           </div>
@@ -119,23 +134,34 @@ async function handleSubmit() {
               type="url"
               placeholder="Ссылка на ваш Linkedin"
               class="w-full rounded-xl border border-alto px-4 py-3 focus:outline-none focus:ring-2 focus:ring-royal-blue"
+              required
             />
             <p v-if="touched.linkedin && errors.linkedin" class="text-red-600 text-sm mt-1">{{ errors.linkedin }}</p>
           </div>
 
-          <input
-            v-model.trim="form.company"
-            type="text"
-            placeholder="Место работы"
-            class="w-full rounded-xl border border-alto px-4 py-3 focus:outline-none focus:ring-2 focus:ring-royal-blue"
-          />
+          <div>
+            <input
+              v-model.trim="form.company"
+              @blur="touched.company = true"
+              type="text"
+              placeholder="Место работы"
+              class="w-full rounded-xl border border-alto px-4 py-3 focus:outline-none focus:ring-2 focus:ring-royal-blue"
+              required
+            />
+            <p v-if="touched.company && errors.company" class="text-red-600 text-sm mt-1">{{ errors.company }}</p>
+          </div>
 
-          <input
-            v-model.trim="form.position"
-            type="text"
-            placeholder="Должность"
-            class="w-full rounded-xl border border-alto px-4 py-3 focus:outline-none focus:ring-2 focus:ring-royal-blue"
-          />
+          <div>
+            <input
+              v-model.trim="form.position"
+              @blur="touched.position = true"
+              type="text"
+              placeholder="Должность"
+              class="w-full rounded-xl border border-alto px-4 py-3 focus:outline-none focus:ring-2 focus:ring-royal-blue"
+              required
+            />
+            <p v-if="touched.position && errors.position" class="text-red-600 text-sm mt-1">{{ errors.position }}</p>
+          </div>
 
           <button
             type="submit"

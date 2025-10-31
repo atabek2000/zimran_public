@@ -13,7 +13,7 @@
     ПОДТВЕРДИТЬ УЧАСТИЕ ПО ПОЧТЕ
   </a>
 
-    <img src="@/assets/svg/zimran_success.svg" alt="zimran_success" class="absolute bottom-0 left-0 w-[300px] md:w-auto">
+    <img src="@/assets/svg/zimran_success.svg" alt="zimran_success" class="absolute bottom-0 left-0 w-[200px] md:w-[400px]">
   </section>
   
 </template>
