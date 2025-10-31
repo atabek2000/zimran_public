@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <section class=" h-[calc(100vh-196px)] md:h-[calc(100vh-188px)] flex flex-col items-center justify-center ">
+  <section class=" h-[calc(100vh-230px)] md:h-[calc(100vh-188px)] flex flex-col items-center justify-center ">
     <h1 class=" text-2xl md:text-8xl font-medium md:font-bold text-center">Спасибо за регистрацию!</h1>
     <p class=" text-base md:text-2xl font-medium text-center mt-2 md:mt-6 text-dove-gray max-w-4xl">Письмо со статусом заявки и деталями придет на почту ближе к дате митапа. Stay tuned!    </p>
  
