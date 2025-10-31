@@ -14,7 +14,7 @@ const closeMobileMenu = () => { showMobileMenu.value = false }
 </script>
 
 <template>
-  <header class=" main-container">
+  <header class="  fixed top-0 left-0 right-0 z-50 w-full! bg-white mx-0!">
     <div class="mx-auto max-w-7xl ">
       <div class="flex items-center gap-16 justify-between my-4 md:mt-8 md:mb-0">
         <!-- Left: Logo + badge -->

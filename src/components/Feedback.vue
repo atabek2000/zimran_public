@@ -94,7 +94,10 @@ async function handleSubmit() {
 <template>
   <section class="relative " id="register">
       <div class=" bg-white rounded-xl p-6 md:p-10">
-        <h3 class="text-[28px] md:text-[48px] font-medium text-center">Записаться на митап</h3>
+        <button type="button" @click="emit('close')" class="absolute top-4 right-4 md:hidden">
+          <img src="@/assets/svg/x-black.svg" alt="x-black" class="" @click="emit('close')">
+        </button>
+        <h3 class="text-[28px] md:text-[48px] font-medium text-center mt-3">Записаться на митап</h3>
 
         <form class="mt-6 space-y-4" @submit.prevent="handleSubmit">
           <div>

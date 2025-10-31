@@ -5,7 +5,7 @@ import AppHeader from '@/components/AppHeader.vue'
 <template>
   <div class="">
     <AppHeader />
-    <main>
+    <main class=" mt-[136px] md:mt-[156px]">
       <slot />
     </main>
   </div>

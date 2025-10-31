@@ -27,7 +27,7 @@ const closeRegister = () => { showRegister.value = false }
         </div>
         <div class=" relative mt-20 md:mt-0">
     
-          <h2 class=" text-[30px] leading-[30px] md:text-[90px] md:leading-[94px] font-bold text-center">Как через дизайн строить топ-1 продукты <span class=" whitespace-nowrap">в мире</span></h2>
+          <h2 class=" text-[40px] leading-[50px] md:text-[90px] md:leading-[94px] font-bold text-center">Как через дизайн строить <span class="relative px-2 pb-2">топ-1 <img src="@/assets/svg/text-border.svg" alt="text-border" class="absolute top-0 left-0 right-0 bottom-0  w-full h-full"> </span> продукты <span class=" whitespace-nowrap">в мире</span></h2>   
           <p class=" text-center text-base md:text-2xl font-medium text-dove-gray mt-6">Разберём, как продуманный дизайн влияет на рост продукта — от первых гипотез  <span class=" whitespace-nowrap"> до миллионов пользователей</span></p>
           <img src="/amplituda.png" alt="amplituda" class="absolute max-w-[284px] w-[170px] md:w-auto  -top-14 right-0"></img>
           <img src="@/assets/svg/left-zimran.svg" alt="left-zimran" class="absolute w-[30px] md:w-auto  -top-14 -left-4 md:hidden block"></img>
@@ -82,7 +82,7 @@ const closeRegister = () => { showRegister.value = false }
   <section id="about" class=" mt-11 py-8 md:py-28 bg-image-gray relative">
     <div class="main-container">
 
-      <p class=" text-2xl md:text-5xl font-bold text-center">Cобираем <span class=" text-royal-blue">
+      <p class=" text-[28px] leading-[36px] md:text-5xl md:leading-[58px] font-bold text-center">Cобираем <span class=" text-royal-blue">
       <img src="@/assets/svg/zimran-heart.svg" alt="zimran-heart" class="absolute -top-10 right-0 w-[80px] md:w-auto" />
         дизайнеров, исследователей 
         и продуктовых лидеров,
@@ -134,7 +134,7 @@ const closeRegister = () => { showRegister.value = false }
 
       <button
             @click="openRegister"
-            class=" block mt-12 rounded-full bg-royal-blue py-4 text-base font-medium w-full text-concrete text-center hover:bg-royal-blue/0 hover:ring-1 hover:ring-royal-blue hover:text-royal-blue transition"
+            class=" block mt-12 rounded-full bg-royal-blue  px-6 py-2 md:py-4 mx-auto md:w-lg text-base font-medium  text-concrete text-center hover:bg-royal-blue/0 hover:ring-1 hover:ring-royal-blue hover:text-royal-blue transition"
           >
           ПРИНЯТЬ УЧАСТИЕ В МИТАПЕ
     </button>
@@ -205,6 +205,7 @@ const closeRegister = () => { showRegister.value = false }
               muted
               loop
               playsinline
+              webkit-playsinline
               class=" w-[70px] h-[70px] md:w-[90px] md:h-[90px] object-cover rounded-2xl"
             >
               <source src="/video_mansur.mp4" type="video/mp4" />
