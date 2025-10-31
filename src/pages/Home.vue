@@ -27,7 +27,7 @@ const closeRegister = () => { showRegister.value = false }
         </div>
         <div class=" relative mt-20 md:mt-0">
     
-          <h2 class=" text-[40px] leading-[50px] md:text-[90px] md:leading-[94px] font-bold text-center">Как через дизайн строить <span class="relative px-2 pb-2"> топ-1 <img src="@/assets/svg/text-border.svg" alt="text-border" class="absolute top-0 left-0 right-0 bottom-0  w-full h-full"> </span> продукты <span class=" whitespace-nowrap">в мире</span></h2>   
+          <h2 class=" text-[40px] leading-[50px] md:text-[90px] md:leading-[94px] font-bold text-center">Как через дизайн строить <span class="relative px-2 pb-2 md:px-4">топ-1<img src="@/assets/svg/text-border.svg" alt="text-border" class="absolute top-0 left-0 right-0 bottom-0  w-full h-full"> </span> продукты <span class=" whitespace-nowrap">в мире</span></h2>   
           <p class=" text-center text-base md:text-2xl font-medium text-dove-gray mt-6">Разберём, как продуманный дизайн влияет на рост продукта — от первых гипотез  <span class=" whitespace-nowrap"> до миллионов пользователей</span></p>
           <img src="/amplituda.png" alt="amplituda" class="absolute max-w-[284px] w-[170px] md:w-auto  -top-14 right-0"></img>
           <img src="@/assets/svg/left-zimran.svg" alt="left-zimran" class="absolute w-[30px] md:w-auto  -top-14 -left-4 md:hidden block"></img>
