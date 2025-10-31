@@ -28,7 +28,7 @@ const closeRegister = () => { showRegister.value = false }
         <div class=" relative mt-20 md:mt-0">
     
           <h2 class=" text-[30px] leading-[30px] md:text-[90px] md:leading-[94px] font-bold text-center">Как через дизайн строить топ-1 продукты <span class=" whitespace-nowrap">в мире</span></h2>
-          <p class=" text-center text-base md:text-2xl font-medium text-dove-gray mt-6">Разберём, как продуманный дизайн влияет на рост продукта — от первых гипотез до <span class=" whitespace-nowrap"> миллионов пользователей</span></p>
+          <p class=" text-center text-base md:text-2xl font-medium text-dove-gray mt-6">Разберём, как продуманный дизайн влияет на рост продукта — от первых гипотез  <span class=" whitespace-nowrap"> до миллионов пользователей</span></p>
           <img src="/amplituda.png" alt="amplituda" class="absolute max-w-[284px] w-[170px] md:w-auto  -top-14 right-0"></img>
           <img src="@/assets/svg/left-zimran.svg" alt="left-zimran" class="absolute w-[30px] md:w-auto  -top-14 -left-4 md:hidden block"></img>
         </div>
@@ -155,7 +155,7 @@ const closeRegister = () => { showRegister.value = false }
       <img src="@/assets/svg/idea.svg" alt="idea" width="78" height="78" class="w-[50px] md:w-[78px]">
     </div>
 
-    <p class=" text-xl md:text-4xl font-medium text-center mt-6">Zimran — <span class=" text-royal-blue">people-powered system.</span>  Мы превращаем вклад каждого в новые возможности и создаём tech-продукты, где таланты растут и становятся лидерами.</p>
+    <p class=" text-xl md:text-4xl font-medium text-center mt-6">Zimran — <span class=" text-royal-blue">people-powered system.</span>  Мы превращаем вклад каждого <span class=" whitespace-nowrap"> в новые </span> <span class=" text-royal-blue">возможности</span> и создаём tech-продукты, где <span class=" text-royal-blue">таланты </span> растут <span class=" whitespace-nowrap"> и становятся лидерами</span>.</p>
 
     <img src="/gallery.png" alt="gallery" class="mt-8 w-full hidden md:block">
     <img src="/gallery-small.png" alt="gallery-small" class="mt-8 w-full md:hidden">
