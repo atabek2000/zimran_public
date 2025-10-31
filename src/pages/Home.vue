@@ -28,7 +28,7 @@ const closeRegister = () => { showRegister.value = false }
         <div class=" relative mt-20 md:mt-0">
     
           <h2 class=" text-[30px] leading-[30px] md:text-[90px] md:leading-[94px] font-bold text-center">Как через дизайн строить топ-1 продукты <span class=" whitespace-nowrap">в мире</span></h2>
-          <p class=" text-center text-base md:text-2xl font-medium text-dove-gray mt-6">Разберём, как продуманный дизайн влияет на рост продукта — от первых гипотез до миллионов пользователей</p>
+          <p class=" text-center text-base md:text-2xl font-medium text-dove-gray mt-6">Разберём, как продуманный дизайн влияет на рост продукта — от первых гипотез до <span class=" whitespace-nowrap"> миллионов пользователей</span></p>
           <img src="/amplituda.png" alt="amplituda" class="absolute max-w-[284px] w-[170px] md:w-auto  -top-14 right-0"></img>
           <img src="@/assets/svg/left-zimran.svg" alt="left-zimran" class="absolute w-[30px] md:w-auto  -top-14 -left-4 md:hidden block"></img>
         </div>
