@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <section class=" h-[calc(100vh-230px)] md:h-[calc(100vh-188px)] flex flex-col items-center justify-center ">
+  <section class=" h-[calc(100vh-250px)] md:h-[calc(100vh-188px)] flex flex-col items-center justify-center ">
     <h1 class=" text-2xl  md:text-8xl font-bold text-center">Ваше участие подтверждено!</h1>
     <p class=" text-base md:text-2xl font-medium text-center mt-2 md:mt-6 text-dove-gray max-w-4xl">Проверьте почту — там ваш персональный QR-код для входа.</p>
     <p class=" text-base md:text-2xl font-medium text-center  text-dove-gray max-w-4xl">До встречи на митапе!</p>
