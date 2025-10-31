@@ -134,7 +134,7 @@ const closeRegister = () => { showRegister.value = false }
 
       <button
             @click="openRegister"
-            class=" block mt-12 rounded-full bg-royal-blue  px-6 py-2 md:py-4 mx-auto md:w-lg text-base font-medium  text-concrete text-center hover:bg-royal-blue/0 hover:ring-1 hover:ring-royal-blue hover:text-royal-blue transition"
+            class=" block mt-12 rounded-full bg-royal-blue  px-6 py-2 md:py-4 mx-auto md:w-full text-base font-medium  text-concrete text-center hover:bg-royal-blue/0 hover:ring-1 hover:ring-royal-blue hover:text-royal-blue transition"
           >
           ПРИНЯТЬ УЧАСТИЕ В МИТАПЕ
     </button>
