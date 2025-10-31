@@ -41,7 +41,7 @@ const errors = computed(() => {
   if (!form.linkedin.trim()) e.linkedin = 'Укажите ссылку на Linkedin'
   else if (!/^https?:\/\//i.test(form.linkedin)) e.linkedin = 'Добавьте полный URL (https://...)'
   if (!form.company.trim()) e.company = 'Укажите место работы'
-  if (!form.position.trim()) e.position = 'Укажите должность'
+  if (!form.position.trim()) e.position = 'Укажите позицию'
   return e
 })
 
@@ -156,7 +156,7 @@ async function handleSubmit() {
               v-model.trim="form.position"
               @blur="touched.position = true"
               type="text"
-              placeholder="Должность"
+              placeholder="Позиция"
               class="w-full rounded-xl border border-alto px-4 py-3 focus:outline-none focus:ring-2 focus:ring-royal-blue"
               required
             />

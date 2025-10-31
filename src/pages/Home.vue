@@ -28,7 +28,7 @@ const closeRegister = () => { showRegister.value = false }
         <div class=" relative mt-20 md:mt-0">
     
           <h2 class=" text-[30px] leading-[30px] md:text-[90px] md:leading-[94px] font-bold text-center">Как через дизайн строить топ-1 продукты <span class=" whitespace-nowrap">в мире</span></h2>
-          <p class=" text-center text-base md:text-2xl font-medium text-dove-gray mt-6">Поделимся экспертизой, как через дизайн строить продукты, <br class="hidden md:block" /> которыми пользуются миллионы</p>
+          <p class=" text-center text-base md:text-2xl font-medium text-dove-gray mt-6">Разберём, как продуманный дизайн влияет на рост продукта — от первых гипотез до миллионов пользователей</p>
           <img src="/amplituda.png" alt="amplituda" class="absolute max-w-[284px] w-[170px] md:w-auto  -top-14 right-0"></img>
           <img src="@/assets/svg/left-zimran.svg" alt="left-zimran" class="absolute w-[30px] md:w-auto  -top-14 -left-4 md:hidden block"></img>
         </div>
@@ -155,7 +155,7 @@ const closeRegister = () => { showRegister.value = false }
       <img src="@/assets/svg/idea.svg" alt="idea" width="78" height="78" class="w-[50px] md:w-[78px]">
     </div>
 
-    <p class=" text-xl md:text-4xl font-medium text-center mt-6">Zimran — <span class=" text-royal-blue">people-powered system.</span>  Мы создаём продукты и культуру для <span class=" text-royal-blue">«EXTRA людей»</span>, которые меняют мир</p>
+    <p class=" text-xl md:text-4xl font-medium text-center mt-6">Zimran — <span class=" text-royal-blue">people-powered system.</span>  Мы превращаем вклад каждого в новые возможности и создаём tech-продукты, где таланты растут и становятся лидерами.</p>
 
     <img src="/gallery.png" alt="gallery" class="mt-8 w-full hidden md:block">
     <img src="/gallery-small.png" alt="gallery-small" class="mt-8 w-full md:hidden">
@@ -239,9 +239,9 @@ const closeRegister = () => { showRegister.value = false }
             </video>
             <div >
               <p class=" text-xl md:text-2xl font-medium text-black">Лаура Рахимова</p>
-              <p class=" text-xs md: font-medium mt-1 text-dove-gray">Product Designer, Funnel Team</p>
+              <p class=" text-xs md:text-base font-medium mt-1 text-dove-gray">Product Designer, Funnel Team</p>
               <a href="https://www.linkedin.com/in/laura-rakhimova-913810259/" target="_blank">
-                <p class=" text-xs md: font-medium mt-1 text-royal-blue flex items-center gap-1">
+                <p class=" text-xs md:text-base font-medium mt-1 text-royal-blue flex items-center gap-1">
                 <img src="@/assets/svg/linked.svg" alt="linked" width="16" height="16">
                 Linkedin</p>
                 </a>
@@ -274,9 +274,9 @@ const closeRegister = () => { showRegister.value = false }
             </video>
             <div >
               <p class=" text-xl md:text-2xl font-medium text-black">Абильмансур Омар</p>
-              <p class=" text-xs md: font-medium mt-1 text-dove-gray">Product Designer at Finelo</p>
+              <p class=" text-xs md:text-base font-medium mt-1 text-dove-gray">Product Designer at Finelo</p>
               <a href="https://www.linkedin.com/in/mansur-omar-4559911a0/" target="_blank">
-              <p class=" text-xs md: font-medium mt-1 text-royal-blue flex items-center gap-1">
+              <p class=" text-xs md:text-base font-medium mt-1 text-royal-blue flex items-center gap-1">
                   <img src="@/assets/svg/linked.svg" alt="linked" width="16" height="16">
                   Linkedin</p>
                 </a>
@@ -310,10 +310,10 @@ const closeRegister = () => { showRegister.value = false }
             </video>
             <div >
               <p class=" text-xl md:text-2xl font-medium text-black">Асия Сарсен</p>
-              <p class=" text-xs md: font-medium mt-1 text-dove-gray">Product Designer at Finelo</p>
+              <p class=" text-xs md:text-base font-medium mt-1 text-dove-gray">Product Designer at Finelo</p>
               <a href="https://www.linkedin.com/in/assiya-sarsen-5661a2336/" target="_blank">
 
-                <p class=" text-xs md: font-medium mt-1 text-royal-blue flex items-center gap-1">
+                <p class=" text-xs md:text-base font-medium mt-1 text-royal-blue flex items-center gap-1">
                   <img src="@/assets/svg/linked.svg" alt="linked" width="16" height="16">
                   Linkedin</p>
                 </a>
@@ -346,10 +346,10 @@ const closeRegister = () => { showRegister.value = false }
             </video>
             <div >
               <p class=" text-xl md:text-2xl font-medium text-black">Арман Кубенов</p>
-              <p class=" text-xs md: font-medium mt-1 text-dove-gray">Product Designer at Coursiv</p>
+              <p class=" text-xs md:text-base font-medium mt-1 text-dove-gray">Product Designer at Coursiv</p>
               <a href="https://www.linkedin.com/in/arman-kubenov-6260b3a7/" target="_blank">
 
-                <p class=" text-xs md: font-medium mt-1 text-royal-blue flex items-center gap-1">
+                <p class=" text-xs md:text-base font-medium mt-1 text-royal-blue flex items-center gap-1">
                   <img src="@/assets/svg/linked.svg" alt="linked" width="16" height="16">
                   Linkedin</p>
                 </a>
@@ -367,10 +367,10 @@ const closeRegister = () => { showRegister.value = false }
             </video>
             <div >
               <p class=" text-xl md:text-2xl font-medium text-black">Алина Шишкова</p>
-              <p class=" text-xs md: font-medium mt-1 text-dove-gray">Product Designer at Coursiv</p>
+              <p class=" text-xs md:text-base font-medium mt-1 text-dove-gray">Product Designer at Coursiv</p>
               <a href="https://www.linkedin.com/in/alina-shishkova-67b510278/" target="_blank">
 
-                <p class=" text-xs md: font-medium mt-1 text-royal-blue flex items-center gap-1">
+                <p class=" text-xs md:text-base font-medium mt-1 text-royal-blue flex items-center gap-1">
                   <img src="@/assets/svg/linked.svg" alt="linked" width="16" height="16">
                   Linkedin</p>
                 </a>
@@ -380,7 +380,7 @@ const closeRegister = () => { showRegister.value = false }
       </div>
 
       <div class=" flex gap-5 items-center mt-8">
-        <div class=" program-ball text-base font-medium text-black">14:00 <br />15:40</div>
+        <div class=" program-ball text-base font-medium text-black">14:00 <br />15:00</div>
         <div class="flex items-center gap-1 ">
           <img src="@/assets/svg/pin.svg" alt="pin" width="24" height="24">
           <p class=" text-concrete text-xl md:text-2xl font-medium "> Networking </p>
