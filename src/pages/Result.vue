@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <section class=" h-[calc(100vh-96px)] flex flex-col items-center justify-center relative">
+  <section class=" h-[calc(100vh-196px)] flex flex-col items-center justify-center relative">
     <h1 class=" text-2xl md:text-8xl font-medium md:font-bold text-center">Спасибо за регистрацию!</h1>
     <p class=" text-base md:text-2xl font-medium text-center mt-2 md:mt-6 text-dove-gray max-w-4xl">Мы отправили Вам письмо, проверьте почту и подтвердите участие. Если письма нет, загляните в папку «Спам». До встречи на митапе! </p>
 
