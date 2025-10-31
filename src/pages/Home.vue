@@ -18,7 +18,7 @@ const closeRegister = () => { showRegister.value = false }
             29 ноября
           </p>
           <p class=" border border-cornflower-blue rounded-full px-2.5 md:px-4 py-2">
-            10:30-16:00
+            10:30-15:00
           </p>
           <p class=" border border-cornflower-blue rounded-full px-2.5 md:px-4 py-2">
             Оффлайн Формат
